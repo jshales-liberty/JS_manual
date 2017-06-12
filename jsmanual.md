@@ -43,9 +43,18 @@ for ()
 object links
 anonymous functions
 nested function scope / closures
-exceptions
-try-catch
-the global namespace
-important functions and objects in the global namespace
-DOM methods and properties
-event handlers
+## exceptions
+* definition
+## try-catch
+* definition
+```
+try catch example
+```
+## the global namespace
+* definition
+## important functions and objects in the global namespace
+* definition
+## DOM methods and properties
+* definition
+## event handlers
+* definition 
