@@ -1,6 +1,6 @@
-#My JS Manual
+# My JS Manual
 
-**Welcome to JS
+**Welcome to JS**
 
 Write a reference manual for the Javascript language. For each of the following topics, provide a description and (where applicable) a simple example:
 
@@ -29,7 +29,7 @@ for []
 	access/assign to index of arrays: a[0] = 3
 	access/assign to key of object o["key"] = 4;
 for {}
-	body of function, loops, ifelse, 
+	body of function, loops, ifelse,
 	compound statements
 	create an object {foo: 3, "hi": 2}
 for ;
