@@ -125,9 +125,21 @@ for ()
 object links
 anonymous functions
 nested function scope / closures
-exceptions
-try-catch
-the global namespace
-important functions and objects in the global namespace
-DOM methods and properties
-event handlers
+## exceptions
+* definition
+## try-catch
+* Used to surround a block of code that may throw an error at runtime.  
+Generally not used to control flow. The try is the code you want to execute, and the
+catch is used to handle the error.  It can be used to throw the error from the language
+or define and throw a custom error.
+```
+try catch example
+```
+## the global namespace
+* definition
+## important functions and objects in the global namespace
+* definition
+## DOM methods and properties
+* definition
+## event handlers
+* definition
