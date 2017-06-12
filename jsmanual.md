@@ -46,7 +46,10 @@ nested function scope / closures
 ## exceptions
 * definition
 ## try-catch
-* definition
+* Used to surround a block of code that may throw an error at runtime.  
+Generally not used to control flow. The try is the code you want to execute, and the
+catch is used to handle the error.  It can be used to throw the error from the language
+or define and throw a custom error.
 ```
 try catch example
 ```
@@ -57,4 +60,4 @@ try catch example
 ## DOM methods and properties
 * definition
 ## event handlers
-* definition 
+* definition
