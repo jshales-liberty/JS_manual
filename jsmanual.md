@@ -99,15 +99,16 @@ for-in
 functions
 local vs. global variables
 ## arrays
-*a collection of variables stored contiguously in memory, able to be referenced by indices. Arrays can contain different types of variables, meaning a given array could contain both strings and ints for example.*
+a collection of variables stored contiguously in memory, able to be referenced by indices. Arrays can contain different types of variables, meaning a given array could contain both strings and ints for example.
 ```var [] = [1,5,"abc"];```
 ## objects
-*objects in JS are variables that contain many values in the form of named value pairs. Objects are instantiated, meaning a given object is created and obeys a previously defined structure. For each named property of an object the property can be adjusted by referencing it with [], similar to how one might reference a given index of an array. Objects have no concept of order in how their data in stored. Objects also have the special "this" keyword that can reference values specific to that instance of the object.*
+objects in JS are variables that contain many values in the form of named value pairs. Objects are instantiated, meaning a given object is created and obeys a previously defined structure. For each named property of an object the property can be adjusted by referencing it with [], similar to how one might reference a given index of an array. Objects have no concept of order in how their data in stored. Objects also have the special "this" keyword that can reference values specific to that instance of the object.
 ```var cat1 = new Object();
 cat1["whiskers"] = 9;
-cat1["name"]=Tobin;```
+cat1["name"]=Tobin;
+```
 ## methods
-*methods are functions contained as values within an object. these functions can be called on an instance of that object. Methods are called using dot notation on an instance of an object.
+*methods are functions contained as values within an object. these functions can be called on an instance of that object. Methods are called using dot notation on an instance of an object.*
 ```cat1.purr() //for instance this may print a purring noise to the console
 cat1.eat() //this might increment the weight of the cat```
 ## the different uses of . [] {} ;
