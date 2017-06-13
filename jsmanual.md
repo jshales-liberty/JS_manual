@@ -4,22 +4,22 @@
 
 Write a reference manual for the Javascript language. For each of the following topics, provide a description and (where applicable) a simple example:
 
-##values, data types 
+##values, data types
 ###Primitive values
-	*Boolean type true or false; 
-	*Null type; Undefined type; 
-	*Number type = 5; 
-	*String type "This is a string"; 
-	*Symbol type; 
+	*Boolean type true or false;
+	*Null type; Undefined type;
+	*Number type = 5;
+	*String type "This is a string";
+	*Symbol type;
 	`Objects (datatype) var x = {firstName:"John", lastName:"Doe"};    // Object
-###Data types are dynamic and can hold different types 
+###Data types are dynamic and can hold different types
 `var x;   			//Now x is undefined
 `var x = 5;         // Now x is a Number
 `var x = "John";     // Now x is a String
 * if adding number data type to a string javascript will treat the number data type as a string. (Automatic type conversion)
 ##operations / operators / operands
 `= is an assignment x = x + 5;
-`+ is and addition operator 
+`+ is and addition operator
 `+	Addition
 `-	Subtraction
 `*	Multiplication
@@ -101,14 +101,14 @@ local vs. global variables
 ## arrays
 *a collection of variables stored contiguously in memory, able to be referenced by indices. Arrays can contain different types of variables, meaning a given array could contain both strings and ints for example.*
 ```var [] = [1,5,"abc"];```
-##objects
+## objects
 *objects in JS are variables that contain many values in the form of named value pairs. Objects are instantiated, meaning a given object is created and obeys a previously defined structure. For each named property of an object the property can be adjusted by referencing it with [], similar to how one might reference a given index of an array. Objects have no concept of order in how their data in stored. Objects also have the special "this" keyword that can reference values specific to that instance of the object.**
 ```var cat1 = new Object();
 cat1["whiskers"] = 9;
 cat1["name"]=Tobin;```
 ## methods
 *methods are functions contained as values within an object. these functions can be called on an instance of that object. Methods are called using dot notation on an instance of an object.
-```cat1.purr() //for instance this may print a purring noise to the console 
+```cat1.purr() //for instance this may print a purring noise to the console
 cat1.eat() //this might increment the weight of the cat```
 the different uses of . [] {} ;
 for .
@@ -147,12 +147,9 @@ for ()
 ## nested function scope / closures
 **Variables can be defined globally (accesible to all parts of your code) or locally (contained and accesible only within a given function). All functions have access to the scope "one above them" meaning most functions have access to the global scope but if you were to define a function within a function (nesting that function) the nested function would have have access to variables one function up (not in the global space).**
 ## exceptions
-* definition
+* Thrown during runtime, can be a built in exception or a custom one created by the developer.  Shouldn't be used to control flow but should be handled.
 ## try-catch
-* Used to surround a block of code that may throw an error at runtime.  
-Generally not used to control flow. The try is the code you want to execute, and the
-catch is used to handle the error.  It can be used to throw the error from the language
-or define and throw a custom error.
+* Used to surround a block of code that may throw an error at runtime.  Generally not used to control flow. The try is the code you want to execute, and the catch is used to handle the error.  It can be used to throw the error from the language or define and throw a custom error.
 ```
 try {
   document.getElementById("addressLine2");
@@ -161,10 +158,15 @@ try {
 }
 ```
 ## the global namespace
-* definition
+* Objects / variables in the global namespace have global scope, so they are available to the entire code.  This includes functions and types.
 ## important functions and objects in the global namespace
-* definition
+* The objects upon which all other objects are built, the standard language features.  These include:
+```
+Function
+Error
+Object
+```
 ## DOM methods and properties
-* definition
+* mechanism for the javascript / ecmascript code to interact with the HTML page, allows you to traverse the HTML tree, retrieve and change specific nodes, react to events.
 ## event handlers
-* definition
+* An event is an action on the page within the browser, and the handler is the code that is triggered when that event occurs.  For example, onload, onclick, hover all are events that are exposed to allow you to write code in response to those events.
