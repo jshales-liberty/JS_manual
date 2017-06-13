@@ -51,7 +51,11 @@ Generally not used to control flow. The try is the code you want to execute, and
 catch is used to handle the error.  It can be used to throw the error from the language
 or define and throw a custom error.
 ```
-try catch example
+try {
+  document.getElementById("addressLine2");
+} catch (err) {
+  alert("element not found");
+}
 ```
 ## the global namespace
 * definition
