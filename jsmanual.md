@@ -144,7 +144,8 @@ for ()
 		case 40:right_rect.top+=6; break;
 		case 65:left_rect.top-=6; break;
 		case 90:left_rect.top+=6; break;
-		}```
+		}
+```
 ## nested function scope / closures
 **Variables can be defined globally (accesible to all parts of your code) or locally (contained and accesible only within a given function). All functions have access to the scope "one above them" meaning most functions have access to the global scope but if you were to define a function within a function (nesting that function) the nested function would have have access to variables one function up (not in the global space).**
 ## exceptions
