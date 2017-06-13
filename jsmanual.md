@@ -13,85 +13,106 @@ Write a reference manual for the Javascript language. For each of the following 
 	*Symbol type; 
 	`Objects (datatype) var x = {firstName:"John", lastName:"Doe"};    // Object
 ###Data types are dynamic and can hold different types 
-`var x;   			//Now x is undefined
-`var x = 5;         // Now x is a Number
-`var x = "John";     // Now x is a String
-* if adding number data type to a string javascript will treat the number data type as a string. (Automatic type conversion)
+`var x;   			//Now x is undefined`
+`var x = 5;         // Now x is a Number`
+`var x = "John";     // Now x is a String`
+-if adding number data type to a string javascript will treat the number data type as a string. (Automatic type conversion)
 ##operations / operators / operands
-`= is an assignment x = x + 5;
-`+ is and addition operator 
-`+	Addition
-`-	Subtraction
-`*	Multiplication
-`/	Division'
-`%	Modulus
-`++	Increment
-`--	Decrement
+`= is an assignment x = x + 5;`
+`+ is and addition operator `
+`+	Addition`
+`-	Subtraction`
+`*	Multiplication`
+`/	Division`
+`%	Modulus`
+`++	Increment`
+`--	Decrement`
 ###= Assignment Operators
-`x = y
-`+=	x += y	x = x + y
-`-=	x -= y	x = x - y
-`*=	x *= y	x = x * y
-`/=	x /= y	x = x / y
-`%=	x %= y	x = x % y
+`x = y`
+`+=	x += y	x = x + y`
+`-=	x -= y	x = x - y`
+`*=	x *= y	x = x * y`
+`/=	x /= y	x = x / y`
+`%=	x %= y	x = x % y`
 ### Comparison Operators
-`==	equal to
-`===	equal value and equal type
-`!=	not equal
-`!==	not equal value or not equal type
-`>	greater than
-`<	less than
-`>=	greater than or equal to
-`<=	less than or equal to
-`?	ternary operator
-### Logical Operators
-`&&	logical and
-`||	logical or
-`!	logical not
-### Type Operators
-`typeof	Returns the type of a variable
-`instanceof	Returns true if an object is an instance of an object type
+`==	equal to`
+`===	equal value and equal type`
+`!=	not equal`
+`!==	not equal value or not equal type`
+`>	greater than`
+`<	less than`
+`>=	greater than or equal to`
+`<=	less than or equal to`
+`?	ternary operator`
+### Logical Operators`
+`&&	logical and`
+`||	logical or`
+`!	logical not`
+### Type Operators`
+`typeof	Returns the type of a variable`
+`instanceof	Returns true if an object is an instance of an object type`
 ### Bitwise Operators
-`&	AND	5 & 1	0101 & 0001	0001	 1
-`|	OR	5 | 1	0101 | 0001	0101	 5
-`~	NOT	~ 5	 ~0101	1010	 10
-`^	XOR	5 ^ 1	0101 ^ 0001	0100	 4
-`<<	Zero fill left shift	5 << 1	0101 << 1	1010	 10
-`>>	Signed right shift	5 >> 1	0101 >> 1	0010	  2
-`>>>	Zero fill right shift	5 >>> 1	0101 >>> 1	0010	  2
+`&	AND	5 & 1	0101 & 0001	0001	 1`
+`|	OR	5 | 1	0101 | 0001	0101	 5`
+`~	NOT	~ 5	 ~0101	1010	 10`
+`^	XOR	5 ^ 1	0101 ^ 0001	0100	 4`
+`<<	Zero fill left shift	5 << 1	0101 << 1	1010	 10`
+`>>	Signed right shift	5 >> 1	0101 >> 1	0010	  2`
+`>>>	Zero fill right shift	5 >>> 1	0101 >>> 1	0010	  2`
 
 ##variables, var
-*All JavaScript variables must be identified with unique names.
-*These unique names are called identifiers.
-*Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
-*The general rules for constructing names for variables (unique identifiers) are:
-*Names can contain letters, digits, underscores, and dollar signs.
-*Names must begin with a letter
-*Names can also begin with $
-*Names are case sensitive (y and Y are different variables)
+-All JavaScript variables must be identified with unique names.
+-These unique names are called identifiers.
+-Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+-The general rules for constructing names for variables (unique identifiers) are:
+-Names can contain letters, digits, underscores, and dollar signs.
+-Names must begin with a letter
+-Names can also begin with $
+-Names are case sensitive (y and Y are different variables)
 
 ##reserved words
 *In JavaScript you cannot use these reserved words as variables, labels, or function names:
-'abstract	arguments	await*	boolean
-'break	byte	case	catch
-'char	class*	const	continue
-'debugger	default	delete	do
-'double	else	enum*	eval
-'export*	extends*	false	final
-'finally	float	for	function
-'goto	if	implements	import*
-'in	instanceof	int	interface
-'let*	long	native	new
-'null	package	private	protected
-'public	return	short	static
-'super*	switch	synchronized	this
-'throw	throws	transient	true
-'try	typeof	var	void
-'volatile	while	with	yield
+`abstract	arguments	await*	boolean`
+`break	byte	case	catch`
+`char	class*	const	continue`
+`debugger	default	delete	do`
+`double	else	enum*	eval`
+`export*	extends*	false	final`
+`finally	float	for	function`
+`goto	if	implements	import*`
+`in	instanceof	int	interface`
+`let*	long	native	new`
+`null	package	private	protected`
+`public	return	short	static`
+`super*	switch	synchronized	this`
+`throw	throws	transient	true`
+`try	typeof	var	void`
+`volatile	while	with	yield`
 ##statements vs. expressions
-*An expression produces a value and can be written wherever a value is expected.
-*Astatement performs an action. Loops and if statements are examples of statements
+*An expression produces a value and can be written wherever a value is expected.`
+`Every syntactically valid expression resolves to some value but conceptually, there are two types of expressions: with side effects (for example: those that `
+`assign value to a variable) and those that in some sense evaluates and therefore resolves to value.`
+`The expression x = 7 is an example of the first type. This expression uses the = operator to assign the value seven to the variable x. The expression itself evaluates to seven.`
+`The code 3 + 4 is an example of the second expression type. This expression uses the + operator to add three and four together without assigning the result, seven, to a variable.`
+`JavaScript has the following expression categories:`
+
+`Arithmetic: evaluates to a number, for example 3.14159. (Generally uses arithmetic operators.)`
+`String: evaluates to a character string, for example, "Fred" or "234". (Generally uses string operators.)`
+`Logical: evaluates to true or false. (Often involves logical operators.)`
+`Primary expressions: Basic keywords and general expressions in JavaScript.`
+`Left-hand-side expressions: Left values are the destination of an assignment.`
+*A statement performs an action. Loops and if statements are examples of statements`
+*Statements are executed, one by one, in the same order as they are written.`
+*Statements end with semicolon.
+`var a, b, c;`
+`a = 5;`
+`b = 6;`
+`c = a + b;`
 ##variables vs. values
+-variables store a refrence to a value. 
+-values can be assigned to variables.
+`example of variable assigned a value:  var x = 9;`
+
 if-else
 while
 for
