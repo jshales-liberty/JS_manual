@@ -44,23 +44,26 @@ Write a reference manual for the Javascript language. For each of the following 
 
 ### Comparison Operators
 
-`==	equal to`
-`===	equal value and equal type`
-`!=	not equal`
-`!==	not equal value or not equal type`
-`>	greater than`
-`<	less than`
-`>=	greater than or equal to`
-`<=	less than or equal to`
-`?	ternary operator`
+```==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator
+```
 
 ### Logical Operators
-`&&	logical and`
-`||	logical or`
-`!	logical not`
+```&&	logical and
+||	logical or
+!	logical not
+```
 ### Type Operators
-`typeof	Returns the type of a variable`
-`instanceof	Returns true if an object is an instance of an object type`
+```typeof	Returns the type of a variable
+instanceof	Returns true if an object is an instance of an object type
+```
 
 ### Bitwise Operators
 ```&	AND	5 & 1	0101 & 0001	0001	 1
