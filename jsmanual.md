@@ -87,8 +87,8 @@ function myFunction() {
 }
 ```
 
-##values, data types
-###Primitive values
+## values, data types
+### Primitive values
 
 - Boolean type true or false;
 - Null type; Undefined type;
@@ -97,13 +97,13 @@ function myFunction() {
 - Symbol type;
 - Objects (datatype) var x = {firstName:"John", lastName:"Doe"};    // Object
 
-###Data types are dynamic and can hold different types
+### Data types are dynamic and can hold different types
 
 `var x;   			//Now x is undefined`
 `var x = 5;         // Now x is a Number`
 `var x = "John";     // Now x is a String`
 
-* if adding number data type to a string javascript will treat the number data type as a string. (Automatic type conversion)
+- if adding number data type to a string javascript will treat the number data type as a string. (Automatic type conversion)
 
 ## operations / operators / operands
 `= is an assignment x = x + 5;``
@@ -116,7 +116,7 @@ function myFunction() {
 `++	Increment`
 `--	Decrement`
 
-###= Assignment Operators
+### Assignment Operators
 
 `x = y`
 `+=	x += y	x = x + y`
@@ -154,7 +154,7 @@ function myFunction() {
 `>>	Signed right shift	5 >> 1	0101 >> 1	0010	  2`
 `>>>	Zero fill right shift	5 >>> 1	0101 >>> 1	0010	  2`
 
-##variables, var
+## variables, var
 
 -All JavaScript variables must be identified with unique names.
 -These unique names are called identifiers.
@@ -165,7 +165,7 @@ function myFunction() {
 -Names can also begin with $
 -Names are case sensitive (y and Y are different variables)
 
-##reserved words
+## reserved words
 *In JavaScript you cannot use these reserved words as variables, labels, or function names:
 `abstract	arguments	await*	boolean`
 `break	byte	case	catch`
@@ -183,7 +183,7 @@ function myFunction() {
 `throw	throws	transient	true`
 `try	typeof	var	void`
 `volatile	while	with	yield`
-##statements vs. expressions
+## statements vs. expressions
 *An expression produces a value and can be written wherever a value is expected.`
 `Every syntactically valid expression resolves to some value but conceptually, there are two types of expressions: with side effects (for example: those that `
 `assign value to a variable) and those that in some sense evaluates and therefore resolves to value.`
@@ -203,7 +203,7 @@ function myFunction() {
 `a = 5;`
 `b = 6;`
 `c = a + b;`
-##variables vs. values
+## variables vs. values
 -variables store a refrence to a value. 
 -values can be assigned to variables.
 `example of variable assigned a value:  var x = 9;`
@@ -243,7 +243,7 @@ cat1["name"]=Tobin;
 
 ## methods
 
-*methods are functions contained as values within an object. these functions can be called on an instance of that object. Methods are called using dot notation on an instance of an object.*
+methods are functions contained as values within an object. these functions can be called on an instance of that object. Methods are called using dot notation on an instance of an object.
 
 ```cat1.purr() //for instance this may print a purring noise to the console
 cat1.eat() //this might increment the weight of the cat
@@ -278,11 +278,11 @@ for ()
 
 ## object links
 
-**an object link takes you to a different part of the html page when clicked on/triggered in JavaScript**
+an object link takes you to a different part of the html page when clicked on/triggered in JavaScript
 
 ## anonymous functions
 
-**annonymous functions are functions that are defined without a name and are typically only called once. for instance, when setting up an event handler one might put an annonymous function the action triggered when the event is triggered. annonymous functions can be good tools if one can't think of a good thing to call a process that should really only exist at one place in one's code.**
+annonymous functions are functions that are defined without a name and are typically only called once. for instance, when setting up an event handler one might put an annonymous function the action triggered when the event is triggered. annonymous functions can be good tools if one can't think of a good thing to call a process that should really only exist at one place in one's code.
 
 ```
 ///here's an example of an annonymous function in my pong game event listener
@@ -297,15 +297,15 @@ for ()
 
 ## nested function scope / closures
 
-**Variables can be defined globally (accesible to all parts of your code) or locally (contained and accesible only within a given function). All functions have access to the scope "one above them" meaning most functions have access to the global scope but if you were to define a function within a function (nesting that function) the nested function would have have access to variables one function up (not in the global space).**
+Variables can be defined globally (accesible to all parts of your code) or locally (contained and accesible only within a given function). All functions have access to the scope "one above them" meaning most functions have access to the global scope but if you were to define a function within a function (nesting that function) the nested function would have have access to variables one function up (not in the global space).
 
 ## exceptions
 
-* Thrown during runtime, can be a built in exception or a custom one created by the developer.  Shouldn't be used to control flow but should be handled.
+- Thrown during runtime, can be a built in exception or a custom one created by the developer.  Shouldn't be used to control flow but should be handled.
 
 ## try-catch
 
-* Used to surround a block of code that may throw an error at runtime.  Generally not used to control flow. The try is the code you want to execute, and the catch is used to handle the error.  It can be used to throw the error from the language or define and throw a custom error.
+- Used to surround a block of code that may throw an error at runtime.  Generally not used to control flow. The try is the code you want to execute, and the catch is used to handle the error.  It can be used to throw the error from the language or define and throw a custom error.
 
 ```
 try {
