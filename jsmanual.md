@@ -69,8 +69,8 @@ Write a reference manual for the Javascript language. For each of the following 
 ^	XOR	5 ^ 1	0101 ^ 0001	0100	 4
 <<	Zero fill left shift	5 << 1	0101 << 1	1010	 10
 >>	Signed right shift	5 >> 1	0101 >> 1	0010	  2
-```>>>	Zero fill right shift	5 >>> 1	0101 >>> 1	0010	  2
-
+>>>	Zero fill right shift	5 >>> 1	0101 >>> 1	0010	  2
+```
 ## variables, var
 
 -All JavaScript variables must be identified with unique names.
