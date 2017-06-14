@@ -54,22 +54,22 @@ Write a reference manual for the Javascript language. For each of the following 
 `<=	less than or equal to`
 `?	ternary operator`
 
-### Logical Operators`
+### Logical Operators
 `&&	logical and`
 `||	logical or`
 `!	logical not`
-### Type Operators`
+### Type Operators
 `typeof	Returns the type of a variable`
 `instanceof	Returns true if an object is an instance of an object type`
 
 ### Bitwise Operators
-`&	AND	5 & 1	0101 & 0001	0001	 1`
-`|	OR	5 | 1	0101 | 0001	0101	 5`
-`~	NOT	~ 5	 ~0101	1010	 10`
-`^	XOR	5 ^ 1	0101 ^ 0001	0100	 4`
-`<<	Zero fill left shift	5 << 1	0101 << 1	1010	 10`
-`>>	Signed right shift	5 >> 1	0101 >> 1	0010	  2`
-`>>>	Zero fill right shift	5 >>> 1	0101 >>> 1	0010	  2`
+```&	AND	5 & 1	0101 & 0001	0001	 1
+|	OR	5 | 1	0101 | 0001	0101	 5
+~	NOT	~ 5	 ~0101	1010	 10
+^	XOR	5 ^ 1	0101 ^ 0001	0100	 4
+<<	Zero fill left shift	5 << 1	0101 << 1	1010	 10
+>>	Signed right shift	5 >> 1	0101 >> 1	0010	  2
+```>>>	Zero fill right shift	5 >>> 1	0101 >>> 1	0010	  2
 
 ## variables, var
 
@@ -83,7 +83,7 @@ Write a reference manual for the Javascript language. For each of the following 
 -Names are case sensitive (y and Y are different variables)
 
 ## reserved words
-*In JavaScript you cannot use these reserved words as variables, labels, or function names:
+- In JavaScript you cannot use these reserved words as variables, labels, or function names:
 `abstract	arguments	await*	boolean`
 `break	byte	case	catch`
 `char	class*	const	continue`
@@ -101,7 +101,7 @@ Write a reference manual for the Javascript language. For each of the following 
 `try	typeof	var	void`
 `volatile	while	with	yield`
 ## statements vs. expressions
-*An expression produces a value and can be written wherever a value is expected.`
+- An expression produces a value and can be written wherever a value is expected.`
 `Every syntactically valid expression resolves to some value but conceptually, there are two types of expressions: with side effects (for example: those that `
 `assign value to a variable) and those that in some sense evaluates and therefore resolves to value.`
 `The expression x = 7 is an example of the first type. This expression uses the = operator to assign the value seven to the variable x. The expression itself evaluates to seven.`
