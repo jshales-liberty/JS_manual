@@ -86,9 +86,6 @@ function myFunction() {
     // code here can use carName
 }
 ```
-arrays
-objects
-methods
 
 ##values, data types
 ###Primitive values
