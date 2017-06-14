@@ -73,14 +73,14 @@ Write a reference manual for the Javascript language. For each of the following 
 ```
 ## variables, var
 
--All JavaScript variables must be identified with unique names.
--These unique names are called identifiers.
--Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
--The general rules for constructing names for variables (unique identifiers) are:
--Names can contain letters, digits, underscores, and dollar signs.
--Names must begin with a letter
--Names can also begin with $
--Names are case sensitive (y and Y are different variables)
+- All JavaScript variables must be identified with unique names.
+- These unique names are called identifiers.
+- Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+- The general rules for constructing names for variables (unique identifiers) are:
+- Names can contain letters, digits, underscores, and dollar signs.
+- Names must begin with a letter
+- Names can also begin with $
+- Names are case sensitive (y and Y are different variables)
 
 ## reserved words
 - In JavaScript you cannot use these reserved words as variables, labels, or function names:
