@@ -127,8 +127,8 @@ The code 3 + 4 is an example of the second expression type. This expression uses
 `b = 6;`
 `c = a + b;`
 ## variables vs. values
--variables store a refrence to a value. 
--values can be assigned to variables.
+- variables store a refrence to a value. 
+- values can be assigned to variables.
 `example of variable assigned a value:  var x = 9;`
 
 
